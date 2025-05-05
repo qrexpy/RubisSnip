@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubis Snip Settings</title>
+  <link rel="stylesheet" href="../css/settings.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Rubis Snip Settings</h1>
+      <p class="slogan">Right-click. Paste. Share.</p>
+    </header>
+    
+    <div class="settings-form">
+      <div class="form-group">
+        <label for="title">Default Title:</label>
+        <input type="text" id="title" placeholder="Untitled Scrap" maxlength="64">
+        <small>Leave blank for default title</small>
+      </div>
+      
+      <div class="form-group">
+        <label for="privacy">Privacy Setting:</label>
+        <select id="privacy">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+      </div>
+      
+      <div class="form-group private-only">
+        <label for="accessKey">Access Key (optional):</label>
+        <input type="password" id="accessKey" placeholder="Custom access key for private scraps">
+        <small>Leave blank for auto-generated key</small>
+      </div>
+      
+      <div class="form-group">
+        <label for="ownerKey">Owner Key (optional):</label>
+        <input type="password" id="ownerKey" placeholder="Custom owner key for managing scraps">
+        <small>Used for editing/deleting scraps later</small>
+      </div>
+      
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="rememberKeys">
+          Remember last created scrap's keys
+        </label>
+        <small>Allows you to manage your last created scrap</small>
+      </div>
+      
+      <div class="form-actions">
+        <button id="save" class="btn-primary">Save Settings</button>
+        <button id="reset" class="btn-secondary">Reset to Defaults</button>
+      </div>
+    </div>
+    
+    <footer>
+      <p>Rubis Snip v1.0</p>
+    </footer>
+  </div>
+  
+  <script src="settings.js"></script>
+</body>
+</html>
