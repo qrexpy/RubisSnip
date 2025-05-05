@@ -57,7 +57,7 @@ This extension integrates with the Rubis API v2:
 ### Project Structure
 
 ```
-rubis-snip/
+RubisSnip/
 ├── manifest.json          # Extension configuration
 ├── src/
 │   ├── css/               # Stylesheets
